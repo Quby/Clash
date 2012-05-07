@@ -1,0 +1,28 @@
+#include <SFML/Graphics.hpp>
+#include <iostream>
+
+int main () {
+	using namespace sf;
+	
+    RenderWindow window(VideoMode(300, 200), "SFML works!");
+    Text text("Hello SFML");
+	ContextSettings settings = window.getSettings();
+	std::cout << settings.majorVersion;
+	
+    while (window.isOpen())
+    {
+        Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(text);
+        window.display();
+    }
+
+    return 0;
+}
+
