@@ -1,0 +1,24 @@
+env = Environment()
+Decider('timestamp-newer')
+libs = ['sfml-audio'
+	   ,'sfml-graphics'
+	   ,'sfml-network'
+	   ,'sfml-system'
+	   ,'sfml-window'
+	   ,'GLEW'
+	   ,'GLU']
+
+if env['PLATFORM'] == 'posix':
+	env['LIBPATH']=['lib']
+	env['CPPPATH']=['include']
+
+conf = Configure(env)
+
+for lib in libs:
+	if not conf.CheckLib(lib):
+		print lib + ' not found!';
+		Exit(1)
+
+env = conf.Finish()
+env.Append(RPATH = './')
+env.SharedLibrary('lib/clash', Glob('lib/clash/*.cpp'), LIBS=libs)

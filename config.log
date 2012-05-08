@@ -1,0 +1,230 @@
+file /home/quby/Projects/Clash/SConstruct-Clash,line 15:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C library sfml-audio... 
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_0.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_0.o -c -Iinclude .sconf_temp/conftest_0.c
+  |
+scons: Configure: ".sconf_temp/conftest_0" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_0 .sconf_temp/conftest_0.o -Llib -lsfml-audio
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library sfml-graphics... 
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_1.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_1.o -c -Iinclude .sconf_temp/conftest_1.c
+  |
+scons: Configure: ".sconf_temp/conftest_1" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_1 .sconf_temp/conftest_1.o -Llib -lsfml-audio -lsfml-graphics
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library sfml-network... 
+scons: Configure: ".sconf_temp/conftest_2.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_2.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_2.o -c -Iinclude .sconf_temp/conftest_2.c
+  |
+scons: Configure: ".sconf_temp/conftest_2" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_2 .sconf_temp/conftest_2.o -Llib -lsfml-audio -lsfml-graphics -lsfml-network
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library sfml-system... 
+scons: Configure: ".sconf_temp/conftest_3.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_3.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_3.o -c -Iinclude .sconf_temp/conftest_3.c
+  |
+scons: Configure: ".sconf_temp/conftest_3" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_3 .sconf_temp/conftest_3.o -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library sfml-window... 
+scons: Configure: ".sconf_temp/conftest_4.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_4.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_4.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_4.o -c -Iinclude .sconf_temp/conftest_4.c
+  |
+scons: Configure: ".sconf_temp/conftest_4" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_4 .sconf_temp/conftest_4.o -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library GLEW... 
+scons: Configure: ".sconf_temp/conftest_5.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_5.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_5.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_5.o -c -Iinclude .sconf_temp/conftest_5.c
+  |
+scons: Configure: ".sconf_temp/conftest_5" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_5 .sconf_temp/conftest_5.o -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window -lGLEW
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library GLU... 
+scons: Configure: ".sconf_temp/conftest_6.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_6.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_6.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_6.o -c -Iinclude .sconf_temp/conftest_6.c
+  |
+scons: Configure: ".sconf_temp/conftest_6" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_6 .sconf_temp/conftest_6.o -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window -lGLEW -lGLU
+  |
+scons: Configure: (cached) yes
+
+
+file /home/quby/Projects/Clash/SConstruct,line 11:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C library clash... 
+scons: Configure: ".sconf_temp/conftest_7.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_7.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_7.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_7.o -c -Iinclude .sconf_temp/conftest_7.c
+  |
+scons: Configure: "lib/clash/clash.os" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o lib/clash/clash.os -c -fPIC -Iinclude lib/clash/clash.cpp
+  |
+scons: Configure: "lib/libclash.so" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o lib/libclash.so -shared -Wl,-rpath=./ lib/clash/clash.os -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window -lGLEW -lGLU
+  |
+scons: Configure: ".sconf_temp/conftest_7" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_7 .sconf_temp/conftest_7.o -Llib -lclash
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: Checking for C library sfml-system... 
+scons: Configure: ".sconf_temp/conftest_8.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_8.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_8.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_8.o -c -Iinclude .sconf_temp/conftest_8.c
+  |
+scons: Configure: ".sconf_temp/conftest_8" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_8 .sconf_temp/conftest_8.o -Llib -lclash -lsfml-system
+  |
+scons: Configure: (cached) yes
+
+
