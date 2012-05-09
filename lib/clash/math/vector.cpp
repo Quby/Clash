@@ -1,5 +1,6 @@
-#include<clash/math.hpp>
-//@todo *=(Matrix4)
+#include<clash/math.cpp>
+#include "math.h"
+
 using namespace clash::math;
 
 Vector3::Vector3(float sx=0.f, float sy=0.f, float sz=0.f) {
@@ -61,13 +62,27 @@ float Vector3::operator* (Vector3& vec) {
 }
 
 void Vector3::operator* (Quaternion& q) {
-	Quaternion vec(this, 0.f);
-	Quaternion res(q);
-	res.conjugate();
-	res *= vec;
+	Vector3 v(*this);
+	v.normalise();
+ 
+	Quaternion res(v.x, v.y, v.z, 0.f);
+	Quaternion dq(q);
+	dq.conjugate();
+	
+	res *= dq;
 	res *= q;
+	
+	x = res.x;
+	y = res.y;
+	z = res.z;
 }
 
-
-
-
+void Vector3::operator* (Matrix4& m) {
+	Vector3 v;
+	v.x = x*m[ 0] + y*m[ 1] + z*m[ 2] + m[ 3];
+	v.y = x*m[ 4] + y*m[ 5] + z*m[ 6] + m[ 7];
+	v.z = x*m[ 8] + y*m[ 9] + z*m[10] + m[11];
+	x = v.x;
+	y = v.y;
+	z = v.z;
+}

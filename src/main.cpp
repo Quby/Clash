@@ -1,4 +1,4 @@
-#include "clash.h"
+#include <clash/surface.hpp>
 #include <fstream>
 #include <iostream>
 #include "SFML/OpenGL.hpp"

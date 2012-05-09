@@ -193,9 +193,13 @@ scons: Configure: "lib/clash/clash.os" is up to date.
 scons: Configure: The original builder output was:
   |g++ -o lib/clash/clash.os -c -fPIC -Iinclude lib/clash/clash.cpp
   |
+scons: Configure: "lib/clash/math.os" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o lib/clash/math.os -c -fPIC -Iinclude lib/clash/math.cpp
+  |
 scons: Configure: "lib/libclash.so" is up to date.
 scons: Configure: The original builder output was:
-  |g++ -o lib/libclash.so -shared -Wl,-rpath=./ lib/clash/clash.os -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window -lGLEW -lGLU
+  |g++ -o lib/libclash.so -shared -Wl,-rpath=./ lib/clash/clash.os lib/clash/math.os -Llib -lsfml-audio -lsfml-graphics -lsfml-network -lsfml-system -lsfml-window -lGLEW -lGLU
   |
 scons: Configure: ".sconf_temp/conftest_7" is up to date.
 scons: Configure: The original builder output was:

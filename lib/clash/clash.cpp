@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <clash.h>
+#include <clash/surface.hpp>
 
 #define nullptr   __null
 
